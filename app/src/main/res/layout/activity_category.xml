@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context="com.example.gr33nsn4ck.classic1970bike.CategoryActivity"
+    android:background="#dde">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/gridview_category"
+        android:numColumns="2"
+        android:layout_gravity="center"
+        android:background="#dde"/>
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="EmailAddress"
+        android:id="@+id/edt_email"
+        android:textIsSelectable="false"
+        android:ems="40"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textSize="18dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:id="@+id/edt_password"
+        android:ems="10"
+        android:gravity="center"
+        android:textSize="18dp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:id="@+id/btn_signin"
+            android:layout_below="@+id/edt_password"
+            android:background="#63383838"
+            android:textSize="20dp"
+            android:textColor="#fff"
+            android:onClick="btn_signin_clicked"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_signup"
+            android:textColor="#fff"
+            android:background="#63383838"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:text="SIGN UP"
+            android:onClick="btn_signup_clicked" />
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

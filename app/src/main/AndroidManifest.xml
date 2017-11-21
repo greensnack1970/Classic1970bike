@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gr33nsn4ck.classic1970bike" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Access Wifi & Network State -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:icon="@drawable/notificationicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".RegisterActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".LoginActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ShowDetailActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".MotorListActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SellActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".GeneralSettings" />
+        <activity android:name=".CategoryActivity"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ShowFullScreenImageActivity" />
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+
+        <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notificationicon" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63afafaf"
+    android:padding="1dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <!--  All Edit text  -->
+
+        <EditText
+            android:id="@+id/edt_topic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:hint="ชื่อกระทู้" />
+
+        <EditText
+            android:id="@+id/edt_detail"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:height="100dp"
+            android:hint="รายละเอียด" />
+
+        <EditText
+            android:id="@+id/edt_price"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:hint="ราคา" />
+
+        <!-- Radio Button Group -->
+        <RadioGroup
+            android:id="@+id/sell_category_radiogroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_classic"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="classic" />
+
+            <RadioButton
+                android:id="@+id/radio_enduro"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="enduro" />
+
+            <RadioButton
+                android:id="@+id/radio_bigbike"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="bigbike" />
+
+            <RadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:checked="false"
+                android:text="other" />
+        </RadioGroup>
+
+
+        <!-- Buttons -->
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="#FFFFFC">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:background="#DDDDDF"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select image 1"
+                    android:id="@+id/btn_select_image1"
+                    android:onClick="btn_select_image1"
+                    android:layout_margin="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="select image 2"
+                    android:id="@+id/btn_select_image2"
+                    android:onClick="btn_select_image2"
+                    android:layout_margin="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="select image 3"
+                    android:id="@+id/btn_select_image3"
+                    android:onClick="btn_select_image3"
+                    android:layout_margin="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="select image 4"
+                    android:id="@+id/btn_select_image4"
+                    android:onClick="btn_select_image4"
+                    android:layout_margin="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="select image 5"
+                    android:id="@+id/btn_select_image5"
+                    android:onClick="btn_select_image5"
+                    android:layout_margin="20dp" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="select image 6"
+                    android:id="@+id/button6"
+                    android:onClick="btn_select_image6"
+                    android:layout_margin="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="#FFFFFC"
+                android:gravity="center"
+                android:layout_weight="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView1"
+                    android:layout_margin="5dp"
+                    android:background="#DDDDDF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView2"
+                    android:layout_margin="5dp"
+                    android:background="#DDDDDF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView3"
+                    android:layout_margin="5dp"
+                    android:background="#DDDDDF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView4"
+                    android:layout_margin="5dp"
+                    android:background="#DDDDDF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView5"
+                    android:layout_margin="5dp"
+                    android:background="#DDDDDF" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/imageView6"
+                    android:layout_margin="5dp"
+                    android:background="#DDDDDF" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#63383838"
+            android:text="ลงประกาศ"
+            android:textColor="#ffd"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:onClick="btn_submit" />
+
+    </LinearLayout>
+</ScrollView>
+
+

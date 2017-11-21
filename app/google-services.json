@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "817192121511",
+    "firebase_url": "https://bike-f264b.firebaseio.com",
+    "project_id": "bike-f264b",
+    "storage_bucket": "bike-f264b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:817192121511:android:d80a951e83b0dc1b",
+        "android_client_info": {
+          "package_name": "com.example.gr33nsn4ck.classic1970bike"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "817192121511-dtfit3k9mshpktv850hsgjigp7tv1icl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7_KJUzd68USyza7juK-z4oNIGjuFXefo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

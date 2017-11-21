@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63afafaf"
+    android:padding="10dp"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ak1.learncode.RegisterActivity">
+
+    <EditText
+        android:id="@+id/txtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:hint="ชื่อโปรไฟล ( ขั้นต่ำ 6 หลัก )์"
+        android:maxLength="15"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtname"
+        android:hint="Username ( ขั้นต่ำ 6 หลัก )"
+        android:maxLength="15"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtusername"
+        android:ems="10"
+        android:hint="Password (ขั้นต่ำ 10 หลัก)"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/txtconpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edt_password"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:maxLength="20"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/txtconpassword"
+        android:ems="10"
+        android:hint="Email ( สำหรับเข้าสู่ระบบ )"
+        android:inputType="textEmailAddress"
+        android:maxLength="30"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/txtphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/edt_email"
+        android:ems="10"
+        android:hint="Phone ( 10หลัก )"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:padding="10dp" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup_sex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtphone"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center">
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Female"
+            android:checked="false"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:checked="false"
+            android:text="Female" />
+    </RadioGroup>
+
+
+    <Spinner
+        android:id="@+id/Province"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup_sex"
+        android:layout_marginTop="16dp"
+        android:entries="@array/spinerItems"
+        android:gravity="center"
+        android:spinnerMode="dialog"/>
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/Province"
+        android:layout_marginTop="10dp"
+        android:background="#63383838"
+        android:onClick="btn_register_onclick"
+        android:text="Register"
+        android:textColor="#ffd" />
+
+</RelativeLayout>

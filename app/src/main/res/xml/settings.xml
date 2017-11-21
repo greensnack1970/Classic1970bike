@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="Notification Settings">
+
+        <SwitchPreference
+            android:title="การแจ้งเตือน"
+            android:defaultValue="true"
+            android:key="notification_state"
+            android:summary="แจ้งเตือนทุกครั้งเมื่อเปิด WIFI"/>
+
+        <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+            android:title="ตั้งค่าการแจ้งเตือน">
+
+            <CheckBoxPreference
+                android:key="classic"
+                android:title="Classic"
+                android:defaultValue="true"
+                android:checked="true"
+                />
+
+            <CheckBoxPreference
+                android:key="enduro"
+                android:title="Enduro"
+                android:defaultValue="true"
+                android:checked="true"
+                />
+
+            <CheckBoxPreference
+                android:key="bigbike"
+                android:title="Bigbike"
+                android:defaultValue="true"
+                android:checked="true"
+                />
+            <CheckBoxPreference
+                android:key="other"
+                android:title="Other"
+                android:defaultValue="true"
+                android:checked="true"
+                />
+
+        </PreferenceScreen>
+
+
+
+    </PreferenceCategory>
+</PreferenceScreen>
